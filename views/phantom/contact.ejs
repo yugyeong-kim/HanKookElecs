@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HANKOOK ELECS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="contact">contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+              <h1>Contact</h1>
+                <div class="divCol">
+                  <div id="kakao-map" style="width: 600px; height: 500px;"></div>
+                  <div class="divCol2">
+                    <h2>한국일렉스</h2>
+                    <p>경기 부천시 조마루로385번길 122 2층 220호</p>
+                  </div>
+                </div>
+                
+              
+						</div>
+					</div>
+
+          <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1c8c3b11ec3ca4b78e21b5ab6356592c"></script>
+          <script>
+
+            var container = document.getElementById('kakao-map');
+
+            var options = {
+              center : new daum.maps.LatLng(37.5014724,126.7912303),
+              level : 3
+            };                  
+            var map = new daum.maps.Map(container, options);
+            
+            var markerPosition  = new daum.maps.LatLng(37.5014724,126.7912303);
+
+            var marker = new daum.maps.Marker({
+              position : markerPosition
+            });
+
+            marker.setMap(map);
+
+        </script>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; HANKOOK ELECS. All rights reserved</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

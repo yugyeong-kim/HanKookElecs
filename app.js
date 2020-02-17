@@ -12,7 +12,8 @@ var singleRouter = require('./routes/single');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+//app.set('views', path.join(__dirname, 'views/aside'));
+app.set('views', path.join(__dirname, 'views/phantom'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
@@ -38,8 +39,12 @@ app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 
 //npm aside css import
-app.use('/asideJs', express.static(__dirname + '/aside/js'));
-app.use('/asideCss', express.static(__dirname + '/aside/css'));
+app.use('/asideJs', express.static(__dirname + '/public/aside/js'));
+app.use('/asideCss', express.static(__dirname + '/public/aside/css'));
+
+//npm assets css import
+app.use('/assJs', express.static(__dirname + '/public/assets/js'));
+app.use('/assCss', express.static(__dirname + '/public/assets/css'));
 
 // error handler
 app.use(function(err, req, res, next) {

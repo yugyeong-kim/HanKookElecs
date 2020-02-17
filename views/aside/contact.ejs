@@ -61,10 +61,18 @@
                   var container = document.getElementById('kakao-map');
 
                   var options = {
-                    center : new daum.maps.LatLng(37.5014514, 126.7910719),
+                    center : new daum.maps.LatLng(37.5014724,126.7912303),
                     level : 3
                   };                  
                   var map = new daum.maps.Map(container, options);
+                  
+                  var markerPosition  = new daum.maps.LatLng(37.5014724,126.7912303);
+
+                  var marker = new daum.maps.Marker({
+                    position : markerPosition
+                  });
+
+                  marker.setMap(map);
 
               </script>
 
