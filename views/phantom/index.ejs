@@ -52,9 +52,9 @@
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
-										<img src="images/3S5KVA.jpg"/>
+										<img  id="img1" src="images/3S5KVA.jpg"/>
 									</span>
-									<a>
+									<a id = '3S5KVA'>
 										<div class="content">
 											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
 										</div>
@@ -62,79 +62,112 @@
 								</article>
 								<article class="style2">
 									<span class="image">
-										<img src="images/3S15KVA.jpg" alt="" />
+										<img id="img2" src="images/3S15KVA.jpg" alt="" inputmode="post"/>
 									</span>
-									<a>
+									<a id = '3S5KVA'>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
 									</a>
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/3S20KVA.jpg" alt="" />
+										<img id="img3" src="images/3S20KVA.jpg" alt="" />
 									</span>
-									<a>
+									<a id = '3S5KVA'>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
 									</a>
 								</article>
 								<article class="style4">
 									<span class="image">
-										<img src="images/3S30KVA.jpg" alt="" />
+										<img id="img4" src="images/3S30KVA.jpg" alt="" />
 									</span>
-									<a>
+									<a id = '3S5KVA'>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
 									</a>
 								</article>
 								<article class="style5">
 									<span class="image">
-										<img src="images/1S20KVA.jpg" alt="" />
+										<img id="img5" src="images/1S20KVA.jpg" alt="" />
 									</span>
-									<a>
+									<a id = '3S5KVA'>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
 									</a>
 								</article>
 								<article class="style6">
 									<span class="image">
-										<img src="images/378.jpg" alt="" />
+										<img id="img6" src="images/378.jpg" alt="" />
 									</span>
-									<a>
+									<a id = '3S5KVA'>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
 									</a>
 								</article>
 								<article class="style2">
 									<span class="image">
-										<img src="images/50KVA_1.jpg" alt="" />
+										<img id="img7" src="images/50KVA_1.jpg" alt="" />
 									</span>
-									<a>
+									<a id = '3S5KVA'>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
 									</a>
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/50KVA_2.jpg" alt="" />
+										<img id="img8" src="images/50KVA_2.jpg" alt="" />
 									</span>
-									<a>
+									<a id = '3S5KVA'>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
 									</a>
 								</article>
 								<article class="style1">
 									<span class="image">
-										<img src="images/50KVA.jpg" alt="" />
+										<img id="img9" src="images/50KVA.jpg" alt="" />
 									</span>
-									<a>
+									<a id = '3S5KVA'>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
 									</a>
 								</article>
 								<article class="style5">
 									<span class="image">
-										<img src="images/100KVA.jpg" alt="" />
+										<img id="img10" src="images/100KVA.jpg" alt="" />
 									</span>
-									<a>
+									<a id = '3S5KVA'>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
 									</a>
 								</article>
 								<article class="style6">
 									<span class="image">
-										<img src="images/150KVA.jpg" alt="" />
+										<img id="img11" src="images/150KVA.jpg" alt="" />
 									</span>
-									<a>
+									<a id = '3S5KVA'>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
 									</a>
 								</article>
 								<article class="style4">
 									<span class="image">
-										<img src="images/378.jpg" alt="" />
+										<img id="img12" src="images/378.jpg" alt="" />
 									</span>
-									<a>
+									<a id = '3S5KVA'>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
 									</a>
 								</article>
 							</section>
@@ -160,5 +193,19 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+			$(document).ready(function () {
+				$('a').on('click', function(){
+					console.log("뭐시여!!!!!!!!!!");
+					console.log($(this).attr('id'));
+					
+					$(location).attr('imgUrl', $(this).attr('id'));
+					$(location).attr('href', 'elements');
+					
+
+				});
+			});
+			</script>
+			
 	</body>
 </html>
